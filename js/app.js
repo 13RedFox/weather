@@ -37,7 +37,7 @@ showCurrentTime();
 
 // ! Weather
 
-fetch(url)
+fetch('http://api.openweathermap.org/data/2.5/weather?q=Kremenchuk&lang=ru&units=metric&appid=09c167d56f45bb57eda495fffcb6742a')
   .then((response) => {
     return response.json();
   })
