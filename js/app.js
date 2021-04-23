@@ -11,7 +11,6 @@ const wrapper = document.querySelector('.wrapper'),
   apiKey = '09c167d56f45bb57eda495fffcb6742a',
   cityDefault = 'Kremenchuk',
   url = `http://api.openweathermap.org/data/2.5/weather?q=${cityDefault}&lang=ru&units=metric&appid=${apiKey}`;
-// * https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
 
 // + Day/Night
 toggle.addEventListener('change', () => {
@@ -47,6 +46,4 @@ fetch(url)
     city.innerHTML = data.name;
     weather.innerHTML = data.weather[0].description;
     temp.innerHTML = `${data.main.temp.toFixed(1)}&deg;`;
-    // sunset.innerHTML = `${data.sys.sunrise}`;
-
   });
