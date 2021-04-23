@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/thermometer.png"
+      type="image/x-icon"
+    />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__lang">
+          <select class="header__lang-select">
+            <option value="ru">RU</option>
+            <option value="ru">UA</option>
+            <option value="ru">EU</option>
+          </select>
+        </div>
+        <div class="header__time">12:00</div>
+        <div class="header__checkbox">
+          <input class="header__checkbox-check" type="checkbox" />
+        </div>
+      </header>
+      <section class="weather">
+        <h1 class="weather__city">Kyiv</h1>
+        <span class="weather__mood">smooth</span>
+        <span class="weather__temp">15&deg;</span>
+        <div class="weather__range">
+          <span class="weather__range-max">Max. 16&deg;,</span>
+          <span class="weather__range-min">Min. 6&deg;</span>
+        </div>
+      </section>
+      <section class="days">
+        <ul class="days__list">
+          <li class="days__list-item">
+            <span class="days__list-hours">Now</span>
+            <img src="./img/cloud.svg" alt="Icon" class="days__list-icon" />
+            <span class="days__list-temp">5&deg;</span>
+          </li>
+          <li class="days__list-item">
+            <span class="days__list-hours">15</span>
+            <img src="./img/cloud.svg" alt="Icon" class="days__list-icon" />
+            <span class="days__list-temp">5&deg;</span>
+          </li>
+          <li class="days__list-item">
+            <span class="days__list-hours">16</span>
+            <img src="./img/cloud.svg" alt="Icon" class="days__list-icon" />
+            <span class="days__list-temp">4&deg;</span>
+          </li>
+          <li class="days__list-item">
+            <span class="days__list-hours">17</span>
+            <img src="./img/cloud.svg" alt="Icon" class="days__list-icon" />
+            <span class="days__list-temp">4&deg;</span>
+          </li>
+          <li class="days__list-item">
+            <span class="days__list-hours">18</span>
+            <img src="./img/cloud.svg" alt="Icon" class="days__list-icon" />
+            <span class="days__list-temp">3&deg;</span>
+          </li>
+          <li class="days__list-item">
+            <span class="days__list-hours">19</span>
+            <img src="./img/cloud.svg" alt="Icon" class="days__list-icon" />
+            <span class="days__list-temp">2&deg;</span>
+          </li>
+          <li class="days__list-item">
+            <span class="days__list-hours">20</span>
+            <img src="./img/cloud.svg" alt="Icon" class="days__list-icon" />
+            <span class="days__list-temp">2&deg;</span>
+          </li>
+        </ul>
+      </section>
+      <section class="weeks">
+        <ul class="weeks__list">
+          <li class="weeks__list-item">
+            <span class="weeks__list-day">friday</span>
+            <img src="./img/cloud.svg" alt="Icon" class="weeks__list-icon" />
+            <div class="weeks__list-temp">
+              <span class="weeks__list-tempday">12&deg;</span>
+              <span class="weeks__list-tempnight">5&deg;</span>
+            </div>
+          </li>
+
+          <li class="weeks__list-item">
+            <span class="weeks__list-day">saturday</span>
+            <img src="./img/cloud.svg" alt="Icon" class="weeks__list-icon" />
+            <div class="weeks__list-temp">
+              <span class="weeks__list-tempday">14&deg;</span>
+              <span class="weeks__list-tempnight">6&deg;</span>
+            </div>
+          </li>
+
+          <li class="weeks__list-item">
+            <span class="weeks__list-day">sunday</span>
+            <img src="./img/cloud.svg" alt="Icon" class="weeks__list-icon" />
+            <div class="weeks__list-temp">
+              <span class="weeks__list-tempday">17&deg;</span>
+              <span class="weeks__list-tempnight">8&deg;</span>
+            </div>
+          </li>
+
+          <li class="weeks__list-item">
+            <span class="weeks__list-day">monday</span>
+            <img src="./img/cloud.svg" alt="Icon" class="weeks__list-icon" />
+            <div class="weeks__list-temp">
+              <span class="weeks__list-tempday">12&deg;</span>
+              <span class="weeks__list-tempnight">6&deg;</span>
+            </div>
+          </li>
+
+          <li class="weeks__list-item">
+            <span class="weeks__list-day">tuesday</span>
+            <img src="./img/cloud.svg" alt="Icon" class="weeks__list-icon" />
+            <div class="weeks__list-temp">
+              <span class="weeks__list-tempday">13&deg;</span>
+              <span class="weeks__list-tempnight">5&deg;</span>
+            </div>
+          </li>
+
+          <li class="weeks__list-item">
+            <span class="weeks__list-day">wednesday</span>
+            <img src="./img/cloud.svg" alt="Icon" class="weeks__list-icon" />
+            <div class="weeks__list-temp">
+              <span class="weeks__list-tempday">14&deg;</span>
+              <span class="weeks__list-tempnight">5&deg;</span>
+            </div>
+          </li>
+
+          <li class="weeks__list-item">
+            <span class="weeks__list-day">thursday</span>
+            <img src="./img/cloud.svg" alt="Icon" class="weeks__list-icon" />
+            <div class="weeks__list-temp">
+              <span class="weeks__list-tempday">10&deg;</span>
+              <span class="weeks__list-tempnight">4&deg;</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="description">
+        <p class="descrition__text">
+          Today: It is cloudy now. The maximum air temperature is 16&deg;.
+          Tonight it rains from time to time, the minimum air temperature is
+          6&deg;.
+        </p>
+      </section>
+      <section class="options">
+        <div class="options__block">
+          <span class="options__block-sup">sunrise</span>
+          <span class="options__block-sub">05:37</span>
+        </div>
+        <div class="options__block">
+          <span class="options__block-sup">sunset</span>
+          <span class="options__block-sub">19:50</span>
+        </div>
+
+        <div class="options__block">
+          <span class="options__block-sup">chance of rain</span>
+          <span class="options__block-sub">40%</span>
+        </div>
+        <div class="options__block">
+          <span class="options__block-sup">humidity</span>
+          <span class="options__block-sub">76%</span>
+        </div>
+
+        <div class="options__block">
+          <span class="options__block-sup">wind</span>
+          <span class="options__block-sub">s 6 km/h</span>
+        </div>
+        <div class="options__block">
+          <span class="options__block-sup">feels like</span>
+          <span class="options__block-sub">12&deg;</span>
+        </div>
+
+        <div class="options__block">
+          <span class="options__block-sup">precipitation</span>
+          <span class="options__block-sub">0</span>
+        </div>
+        <div class="options__block">
+          <span class="options__block-sup">pressure</span>
+          <span class="options__block-sub">1015hPa</span>
+        </div>
+
+        <div class="options__block">
+          <span class="options__block-sup">visibility</span>
+          <span class="options__block-sub">9,7 km</span>
+        </div>
+        <div class="options__block">
+          <span class="options__block-sup">UV-index</span>
+          <span class="options__block-sub">1</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

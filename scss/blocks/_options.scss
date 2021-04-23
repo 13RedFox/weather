@@ -1,0 +1,25 @@
+.options {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-bottom: 1px solid white;
+    padding: 1rem 0 0.5rem;
+
+    &-sup {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: rgba($black, 0.2);
+      text-transform: uppercase;
+    }
+
+    &-sub {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  }
+}

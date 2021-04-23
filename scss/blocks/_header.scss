@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  &__lang {
+    &-select {
+      font-size: $base-size;
+      background: transparent;
+      color: $white;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__checkbox {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      background: url('./../../img/sun.svg') center/cover;
+    }
+  }
+}
