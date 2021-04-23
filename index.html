@@ -12,30 +12,28 @@
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper light">
       <header class="header">
         <div class="header__lang">
           <select class="header__lang-select">
             <option value="ru">RU</option>
-            <option value="ru">UA</option>
-            <option value="ru">EU</option>
+            <option value="ua">UA</option>
+            <option value="en">EN</option>
           </select>
         </div>
-        <div class="header__time">12:00</div>
-        <div class="header__checkbox">
-          <input class="header__checkbox-check" type="checkbox" />
-        </div>
+        <div class="header__time"></div>
+        <input class="header__checkbox" type="checkbox" />
       </header>
       <section class="weather">
-        <h1 class="weather__city">Kyiv</h1>
-        <span class="weather__mood">smooth</span>
-        <span class="weather__temp">15&deg;</span>
-        <div class="weather__range">
+        <h1 class="weather__city"></h1>
+        <span class="weather__mood"></span>
+        <span class="weather__temp"></span>
+        <!-- <div class="weather__range">
           <span class="weather__range-max">Max. 16&deg;,</span>
           <span class="weather__range-min">Min. 6&deg;</span>
-        </div>
+        </div> -->
       </section>
-      <section class="days">
+      <!-- <section class="days">
         <ul class="days__list">
           <li class="days__list-item">
             <span class="days__list-hours">Now</span>
@@ -73,8 +71,8 @@
             <span class="days__list-temp">2&deg;</span>
           </li>
         </ul>
-      </section>
-      <section class="weeks">
+      </section> -->
+      <!-- <section class="weeks">
         <ul class="weeks__list">
           <li class="weeks__list-item">
             <span class="weeks__list-day">friday</span>
@@ -139,14 +137,14 @@
             </div>
           </li>
         </ul>
-      </section>
-      <section class="description">
+      </section> -->
+      <!-- <section class="description">
         <p class="descrition__text">
           Today: It is cloudy now. The maximum air temperature is 16&deg;.
           Tonight it rains from time to time, the minimum air temperature is
           6&deg;.
         </p>
-      </section>
+      </section> -->
       <section class="options">
         <div class="options__block">
           <span class="options__block-sup">sunrise</span>
@@ -154,7 +152,7 @@
         </div>
         <div class="options__block">
           <span class="options__block-sup">sunset</span>
-          <span class="options__block-sub">19:50</span>
+          <span class="options__block-sub sunset">19:50</span>
         </div>
 
         <div class="options__block">
@@ -194,5 +192,7 @@
         </div>
       </section>
     </div>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>

@@ -13,6 +13,19 @@
     }
   }
 
+  input[type='checkbox'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
   &__checkbox {
     width: 4rem;
     height: 4rem;
@@ -20,16 +33,22 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background: url('./../img/sun.svg') center/cover;
+    transition: all 0.3s ease-in-out;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      width: 4rem;
-      height: 4rem;
-      background: url('./../../img/sun.svg') center/cover;
+    &:checked {
+      background: url('./../img/moonlight.svg') center/cover;
     }
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   display: block;
+    //   width: 4rem;
+    //   height: 4rem;
+    //   background: url('./../img/sun.svg') center/cover;
+    // }
   }
 }
